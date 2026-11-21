@@ -5,6 +5,7 @@ import { NOMBRE_ROL } from '../utils/permisos.js';
 
 const ENLACES = [
   { a: '/', texto: 'Inicio', icono: '🏠', roles: ['admin', 'medico', 'enfermero'] },
+  { a: '/agenda', texto: 'Agenda del día', icono: '🕒', roles: ['admin', 'medico', 'enfermero'] },
 ];
 
 export default function Layout() {

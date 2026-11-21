@@ -7,6 +7,7 @@ import Registro from './pages/Registro.jsx';
 import Inicio from './pages/Inicio.jsx';
 import SinPermiso from './pages/SinPermiso.jsx';
 import NoEncontrada from './pages/NoEncontrada.jsx';
+import Agenda from './pages/Agenda.jsx';
 
 export default function App() {
   const { usuario } = useAuth();
@@ -19,6 +20,8 @@ export default function App() {
       <Route element={<RutaProtegida />}>
         <Route element={<Layout />}>
           <Route index element={<Inicio />} />
+          <Route index element={<Inicio />} />
+          <Route path="agenda" element={<Agenda />} />
           <Route path="sin-permiso" element={<SinPermiso />} />
         </Route>
       </Route>
